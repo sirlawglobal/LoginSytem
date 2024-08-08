@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <div class="container">
+     
+  <header>
+    <div></div><button type="button"  id="logout_btn" onclick="logout()">Logout</button>
+  </header>
+        <h1 id="special_headDashboard">Welcome Dear <span id="username"></span></h1>
+      
+            
+          
+          
+    </div>
+<script src="./js/server.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var user = JSON.parse(window.localStorage.getItem('user'));
+            console.log('user from inline', user)
+            var usernameElement = document.getElementById('username');
+            usernameElement.innerHTML = user.username;
+        })
+        
+    </script>
+</body>
+</html>

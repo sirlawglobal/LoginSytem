@@ -1,0 +1,6 @@
+Database Name: school_portal_db
+Database table: users
+Table columns: id as primary key, first_name, last_name, username, email, password->hashed
+
+Create a registration-> send user's informations to the database
+Create a login page
